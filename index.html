@@ -5,42 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <style>
-     .navbar{
-        width:100%;
-        box-shadow:5px 5px 5px 5px grey;
-        padding-top: 1%;
-        padding-bottom: 1%;
+     .bar{
+        box-shadow: 5px 5px 5px 5px #e2dede;
         text-align: center;
-    }
-    .cont{
-        text-align: center;
-        margin-left: 30%;
     }
 .nav{
-    display: flex;
-    list-style-type: none;
-}
-.nav-item{
-margin-left: 5%;
+    margin-left: 30%;
 }
 .nav-item a{
-    text-decoration: none;
-    color: black;
     font-size: x-large;
     font-weight: 900;
+    margin-left: 5%;
 }
-.nav-item a:hover{
+.nav-item a{
     color: coral;
+}
+.card{
+    border: none;
+    box-shadow: 5px 5px 5px 5px #e2dede;
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 1%;
+    padding-bottom: 3%;
 }
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar bar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid cont">
-            <ul class="navbar-nav nav  ">
-              <li class="nav-item">
+            <ul class="navbar-nav nav d-flex ">
+              <li class="nav-item ">
                 <a class="nav-link active" aria-current="page"  href="/index.html">Home</a>
               </li>
               <li class="nav-item">
@@ -55,5 +57,25 @@ margin-left: 5%;
             </ul>
         </div>
       </nav>
+    <div class="container mt-3">
+         <div class="car mb-3" style="width:50%;margin-left:25%" >
+            <img class="card-img-top" src="https://o.remove.bg/downloads/9ff33bec-9f75-4576-a5f8-2584a8f35b6f/cap-2923682__340-removebg-preview.png"  alt="">
+         </div> 
+        <div class="card">
+        <h4 class="card-title mt-4"><b>John Doe</b></h4>
+        <hr>
+        <p class="card-text">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <div class="card-text">
+            <h3>My learning objectives in MIS 310 course are:</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+        </div>
+    </div> 
+        <hr>
+       
+      </div>
 </body>
 </html>
